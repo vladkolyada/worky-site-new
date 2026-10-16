@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Журнал — Worky</title>
+  <meta name="description" content="Стаття з журналу Worky.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%23F7992B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="blog">
+  <a class="skip" href="#main" data-i18n="nav.skip">Перейти до змісту</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html"><span class="logo-text">W<span class="logo-accent">o</span>rky</span></a>
+      <nav aria-label="Головне меню" data-i18n-label="nav.label">
+        <details class="menu">
+          <summary data-i18n="nav.menu">Меню</summary>
+          <ul>
+            <li><a href="index.html" data-page="home" data-i18n="nav.home">Головна</a></li>
+            <li><a href="services.html" data-page="services" data-i18n="nav.services">Послуги</a></li>
+            <li><a href="blog.html" data-page="blog" aria-current="page" data-i18n="nav.blog">Журнал</a></li>
+          </ul>
+        </details>
+      </nav>
+      <div class="lang" role="group" data-i18n-label="lang.group" aria-label="Мова сайту">
+        <button type="button" data-lang="uk" lang="uk" aria-pressed="true" aria-label="Українська">UA</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="post-hero">
+      <div class="wrap">
+        <a class="post-back" href="blog.html" data-i18n="post.back">Назад до журналу</a>
+        <h1 data-post-title>Завантаження…</h1>
+        <div class="post-meta">
+          <span data-post-date></span>
+          <span><span data-i18n="blog.by">Автор:</span> <span data-post-author></span></span>
+        </div>
+      </div>
+    </article>
+
+    <div class="post-cover">
+      <img data-post-image src="assets/images/project-2-800.jpg" width="800" height="821" alt="">
+    </div>
+
+    <div class="wrap">
+      <div class="post-body" data-post-body>
+        <p>Завантаження статті…</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p class="wordmark">Worky</p>
+        <p data-i18n="foot.about">Архітектурна студія: резиденції, інтер'єри, інженерія.</p>
+      </div>
+      <address>
+        <h3 data-i18n="foot.contacts">Контакти</h3>
+        <p><span data-i18n="foot.phone">Тел</span>: <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><a href="mailto:info@demolink.org">info@demolink.org</a></p>
+        <p data-i18n="foot.addr">Alexandria, 32 Washington str, 22303</p>
+      </address>
+      <div>
+        <h3 data-i18n="foot.hours">Години</h3>
+        <p data-i18n="foot.h1">Пн–Чт: 10:00–23:00</p>
+        <p data-i18n="foot.h2">Пт–Нд: 10:00–19:00</p>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="foot.demo">© 2026 Worky. Навчальний проєкт.</span>
+        <span data-i18n="foot.made">Дизайн — Київ</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/posts-data.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

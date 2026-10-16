@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="home.title">Worky — архітектура для обраних</title>
+  <meta name="description" content="Worky — архітектурна студія. Резиденції, пентхауси, інтер'єри.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%23F7992B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main" data-i18n="nav.skip">Перейти до змісту</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html"><span class="logo-text">W<span class="logo-accent">o</span>rky</span></a>
+
+      <nav aria-label="Головне меню" data-i18n-label="nav.label">
+        <details class="menu">
+          <summary data-i18n="nav.menu">Меню</summary>
+          <ul>
+            <li><a href="index.html" data-page="home" aria-current="page" data-i18n="nav.home">Головна</a></li>
+            <li><a href="services.html" data-page="services" data-i18n="nav.services">Послуги</a></li>
+            <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">Журнал</a></li>
+          </ul>
+        </details>
+      </nav>
+
+      <div class="lang" role="group" data-i18n-label="lang.group" aria-label="Мова сайту">
+        <button type="button" data-lang="uk" lang="uk" aria-pressed="true" aria-label="Українська">UA</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/images/hero-1600.jpg"
+             srcset="assets/images/hero-960.jpg 960w, assets/images/hero-1600.jpg 1600w"
+             sizes="100vw" width="1600" height="1073" alt="" fetchpriority="high">
+      </div>
+
+      <div class="wrap">
+        <h1>
+          <span class="word"><span data-i18n="home.hero.line1">Простір, який</span></span>
+          <span class="word"><span data-i18n="home.hero.line2">говорить</span></span>
+          <span class="word"><span data-i18n="home.hero.line3">тихо.</span></span>
+        </h1>
+
+        <p class="lead" data-i18n="home.lead">Worky проєктує резиденції та пентхауси для тих, хто обирає тишу над гучністю. Форма, матеріал, світло — усе підпорядковане одному питанню: хто тут житиме?</p>
+
+        <div class="btns">
+          <a class="btn glow" href="services.html" data-i18n="home.cta1">Обрані роботи <span class="btn-arrow">→</span></a>
+          <a class="btn ghost" href="blog.html" data-i18n="home.cta2">Читати журнал</a>
+        </div>
+
+        <dl class="hero-meta">
+          <div>
+            <dt data-i18n="home.meta.est">Практика</dt>
+            <dd data-i18n="home.meta.est.v">з 2014 року</dd>
+          </div>
+          <div>
+            <dt data-i18n="home.meta.base">Офіси</dt>
+            <dd data-i18n="home.meta.base.v">Київ — Лісабон</dd>
+          </div>
+          <div>
+            <dt data-i18n="home.meta.clients">Клієнти</dt>
+            <dd data-i18n="home.meta.clients.v">Приватні</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true" data-i18n="home.scroll">Скрол</div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-item" data-i18n="marquee.1">Архітектура</span>
+        <span class="marquee-item" data-i18n="marquee.2">Інтер'єр</span>
+        <span class="marquee-item" data-i18n="marquee.3">Інженерія</span>
+        <span class="marquee-item" data-i18n="marquee.4">Ландшафт</span>
+        <span class="marquee-item" data-i18n="marquee.5">Приватні замовлення</span>
+        <span class="marquee-item" data-i18n="marquee.1">Архітектура</span>
+        <span class="marquee-item" data-i18n="marquee.2">Інтер'єр</span>
+        <span class="marquee-item" data-i18n="marquee.3">Інженерія</span>
+        <span class="marquee-item" data-i18n="marquee.4">Ландшафт</span>
+        <span class="marquee-item" data-i18n="marquee.5">Приватні замовлення</span>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="stats-title">
+      <span class="section-num">01</span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="stats-title" data-i18n="stats.title">У цифрах</h2>
+          <p class="lead" data-i18n="stats.lead">Дванадцять років практики. Тихо, свідомо, по одному проєкту за раз.</p>
+        </div>
+        <dl class="stats">
+          <div class="stat reveal">
+            <span class="stat-num" data-count="12">0</span>
+            <span class="stat-label" data-i18n="stats.1">Років практики</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num" data-count="48">0</span>
+            <span class="stat-label" data-i18n="stats.2">Завершених резиденцій</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num" data-count="9">0</span>
+            <span class="stat-label" data-i18n="stats.3">Міжнародних публікацій</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat-num" data-count="14">0</span>
+            <span class="stat-label" data-i18n="stats.4">Нагород та згадок</span>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mani-title">
+      <span class="section-num">02</span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="mani-title" data-i18n="manifesto.title">Позиція</h2>
+          <p class="lead" data-i18n="manifesto.lead">Три речі, у які ми віримо і про які не ведемо перемовин.</p>
+        </div>
+        <div class="manifesto">
+          <article class="manifesto-item">
+            <span class="manifesto-num">01</span>
+            <h3 class="manifesto-title" data-i18n="manifesto.1.t">Ми не проєктуємо будівлі.</h3>
+            <p class="manifesto-text" data-i18n="manifesto.1.p">Ми проєктуємо перші десять хвилин ранку, тиху годину після вечері, геометрію світла на стіні о четвертій дня.</p>
+          </article>
+          <article class="manifesto-item">
+            <span class="manifesto-num">02</span>
+            <h3 class="manifesto-title" data-i18n="manifesto.2.t">Кожен проєкт починається з питання.</h3>
+            <p class="manifesto-text" data-i18n="manifesto.2.p">Не з креслення. Як ви тут житимете, що внесете, що залишите за дверима — відповідь формує план раніше, ніж олівець торкнеться паперу.</p>
+          </article>
+          <article class="manifesto-item">
+            <span class="manifesto-num">03</span>
+            <h3 class="manifesto-title" data-i18n="manifesto.3.t">Матеріали обираємо за характером.</h3>
+            <p class="manifesto-text" data-i18n="manifesto.3.p">Не за ціною. Ціна приходить разом із характером. Ми працюємо з каменем, дубом, вапняною штукатуркою, сталлю — речами, які гарно старіють і з часом стають тихішими.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="svc-title">
+      <span class="section-num">03</span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="svc-title" data-i18n="svc.list.title">Дисципліни</h2>
+          <p class="lead" data-i18n="svc.list.lead">Чотири дисципліни, одна рука. Оберіть одну — або довірте нам усі.</p>
+        </div>
+        <div class="services-preview">
+          <article class="service-card">
+            <span class="service-card-num">01</span>
+            <div>
+              <h3 class="service-card-title" data-i18n="svc.c1.title">Архітектура</h3>
+              <p class="service-card-desc" data-i18n="svc.c1.desc">Концепція, генплан і робоча документація для приватних резиденцій і пентхаусів.</p>
+            </div>
+            <span class="service-card-icon" aria-hidden="true">→</span>
+          </article>
+          <article class="service-card">
+            <span class="service-card-num">02</span>
+            <div>
+              <h3 class="service-card-title" data-i18n="svc.c2.title">Інтер'єр</h3>
+              <p class="service-card-desc" data-i18n="svc.c2.desc">Планування, матеріали, столярка, світло — під те, як ви насправді живете.</p>
+            </div>
+            <span class="service-card-icon" aria-hidden="true">→</span>
+          </article>
+          <article class="service-card">
+            <span class="service-card-num">03</span>
+            <div>
+              <h3 class="service-card-title" data-i18n="svc.c3.title">Інженерія</h3>
+              <p class="service-card-desc" data-i18n="svc.c3.desc">Конструктив і MEP-координація. Невидимо, ефективно, тихо.</p>
+            </div>
+            <span class="service-card-icon" aria-hidden="true">→</span>
+          </article>
+          <article class="service-card">
+            <span class="service-card-num">04</span>
+            <div>
+              <h3 class="service-card-title" data-i18n="svc.c4.title">Ландшафт</h3>
+              <p class="service-card-desc" data-i18n="svc.c4.desc">Сади, тераси й відкриті кімнати, що продовжують архітектуру назовні.</p>
+            </div>
+            <span class="service-card-icon" aria-hidden="true">→</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="proj-title">
+      <span class="section-num">04</span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="proj-title" data-i18n="proj.title">Обрані роботи</h2>
+          <p class="lead" data-i18n="proj.lead">Приватні замовлення, 2018–2026. Назви не розголошуються на прохання клієнтів.</p>
+        </div>
+        <div class="projects">
+          <article class="project">
+            <div class="project-media"><img src="assets/images/project-1-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <div class="project-info">
+              <span class="project-idx">01 / 03</span>
+              <h3 class="project-title" data-i18n="proj.1.title">Ridge House</h3>
+              <div class="project-meta">
+                <span>2024</span><span data-i18n="proj.type.res">Резиденція</span><span>420 м²</span>
+              </div>
+              <p class="project-desc" data-i18n="proj.1.desc">Низький бетонний об'єм, вкладений у схил. Київська область.</p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-media"><img src="assets/images/project-3-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <div class="project-info">
+              <span class="project-idx">02 / 03</span>
+              <h3 class="project-title" data-i18n="proj.2.title">Penthouse V</h3>
+              <div class="project-meta">
+                <span>2023</span><span data-i18n="proj.type.pen">Пентхаус</span><span>310 м²</span>
+              </div>
+              <p class="project-desc" data-i18n="proj.2.desc">Два поверхи над містом, об'єднані однією дубовою стіною. Київ.</p>
+            </div>
+          </article>
+          <article class="project">
+            <div class="project-media"><img src="assets/images/project-5-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <div class="project-info">
+              <span class="project-idx">03 / 03</span>
+              <h3 class="project-title" data-i18n="proj.3.title">Stone Court</h3>
+              <div class="project-meta">
+                <span>2022</span><span data-i18n="proj.type.res">Резиденція</span><span>580 м²</span>
+              </div>
+              <p class="project-desc" data-i18n="proj.3.desc">Дім навколо двору, зведений із місцевого вапняку. Одеська область.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div>
+          <h2 id="cta-title"><span data-i18n="cta.title">Маєте місце?</span> <em>Ми маємо відповідь.</em></h2>
+          <p data-i18n="cta.p">Розкажіть про ділянку та спосіб життя — решта справа техніки.</p>
+        </div>
+        <a class="btn glow" href="mailto:info@demolink.org" data-i18n="cta.btn">Почати розмову <span class="btn-arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p class="wordmark">Worky</p>
+        <p data-i18n="foot.about">Архітектурна студія: резиденції, інтер'єри, інженерія.</p>
+      </div>
+      <address>
+        <h3 data-i18n="foot.contacts">Контакти</h3>
+        <p><span data-i18n="foot.phone">Тел</span>: <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><a href="mailto:info@demolink.org">info@demolink.org</a></p>
+        <p data-i18n="foot.addr">Alexandria, 32 Washington str, 22303</p>
+      </address>
+      <div>
+        <h3 data-i18n="foot.hours">Години</h3>
+        <p data-i18n="foot.h1">Пн–Чт: 10:00–23:00</p>
+        <p data-i18n="foot.h2">Пт–Нд: 10:00–19:00</p>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="foot.demo">© 2026 Worky. Навчальний проєкт.</span>
+        <span data-i18n="foot.made">Дизайн — Київ</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

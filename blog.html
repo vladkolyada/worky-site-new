@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="blog.title">Журнал — Worky</title>
+  <meta name="description" content="Журнал Worky: нотатки про архітектуру та інтер'єри.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%23F7992B'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="blog">
+  <a class="skip" href="#main" data-i18n="nav.skip">Перейти до змісту</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="index.html"><span class="logo-text">W<span class="logo-accent">o</span>rky</span></a>
+      <nav aria-label="Головне меню" data-i18n-label="nav.label">
+        <details class="menu">
+          <summary data-i18n="nav.menu">Меню</summary>
+          <ul>
+            <li><a href="index.html" data-page="home" data-i18n="nav.home">Головна</a></li>
+            <li><a href="services.html" data-page="services" data-i18n="nav.services">Послуги</a></li>
+            <li><a href="blog.html" data-page="blog" data-i18n="nav.blog">Журнал</a></li>
+          </ul>
+        </details>
+      </nav>
+      <div class="lang" role="group" data-i18n-label="lang.group" aria-label="Мова сайту">
+        <button type="button" data-lang="uk" lang="uk" aria-pressed="true" aria-label="Українська">UA</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <span class="eyebrow" data-i18n="nav.blog">Журнал</span>
+        <h1 data-i18n="blog.h1">Журнал</h1>
+        <p class="lead" data-i18n="blog.lead">Нотатки про архітектуру, інтер'єри й те, як ми думаємо про кожне з них.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="posts-title">
+      <span class="section-num">01</span>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="posts-title" data-i18n="blog.list">Останні записи</h2>
+        </div>
+
+        <div class="search" data-search hidden>
+          <label for="q" data-i18n="blog.search">Пошук</label>
+          <input id="q" type="search" autocomplete="off">
+          <p role="status"></p>
+        </div>
+
+        <div class="posts">
+          <a class="post-row" href="post.html?id=1" data-post>
+            <span class="post-num">01</span>
+            <div>
+              <h3 class="post-title" data-i18n="blog.p1.h">Сталий дизайн будівель: де зустрічаються архітектура й інженерія</h3>
+              <div class="post-meta" style="margin-top:.75rem">
+                <span><time datetime="2026-09-14" data-i18n="blog.p1.d">14 вересня 2026</time></span>
+                <span data-i18n="blog.by">Автор:</span>
+              </div>
+            </div>
+            <div class="post-thumb"><img src="assets/images/project-2-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="post-row" href="post.html?id=2" data-post>
+            <span class="post-num">02</span>
+            <div>
+              <h3 class="post-title" data-i18n="blog.p2.h">Світло в інтер'єрі: з чого почати</h3>
+              <div class="post-meta" style="margin-top:.75rem">
+                <span><time datetime="2026-09-02" data-i18n="blog.p2.d">2 вересня 2026</time></span>
+                <span data-i18n="blog.by">Автор:</span>
+              </div>
+            </div>
+            <div class="post-thumb"><img src="assets/images/project-4-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="post-row" href="post.html?id=3" data-post>
+            <span class="post-num">03</span>
+            <div>
+              <h3 class="post-title" data-i18n="blog.p3.h">Як підготуватися до першої зустрічі з архітектором</h3>
+              <div class="post-meta" style="margin-top:.75rem">
+                <span><time datetime="2026-08-20" data-i18n="blog.p3.d">20 серпня 2026</time></span>
+                <span data-i18n="blog.by">Автор:</span>
+              </div>
+            </div>
+            <div class="post-thumb"><img src="assets/images/project-3-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a class="post-row" href="post.html?id=4" data-post>
+            <span class="post-num">04</span>
+            <div>
+              <h3 class="post-title" data-i18n="blog.p4.h">Скло у фасаді: переваги й складнощі</h3>
+              <div class="post-meta" style="margin-top:.75rem">
+                <span><time datetime="2026-08-05" data-i18n="blog.p4.d">5 серпня 2026</time></span>
+                <span data-i18n="blog.by">Автор:</span>
+              </div>
+            </div>
+            <div class="post-thumb"><img src="assets/images/project-5-800.jpg" width="800" height="821" loading="lazy" alt=""></div>
+            <span class="post-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <p class="note" data-i18n="blog.note">Записи демонстраційні — написані для навчального проєкту.</p>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div>
+          <h2 id="cta-title"><span data-i18n="blog.c.title">Питання до запису?</span> <em>Пишіть.</em></h2>
+          <p data-i18n="blog.c.p">Напишіть нам — відповімо й підкажемо, як застосувати це у вашому проєкті.</p>
+        </div>
+        <a class="btn glow" href="mailto:info@demolink.org" data-i18n="cta.btn">Почати розмову <span class="btn-arrow">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div>
+        <p class="wordmark">Worky</p>
+        <p data-i18n="foot.about">Архітектурна студія: резиденції, інтер'єри, інженерія.</p>
+      </div>
+      <address>
+        <h3 data-i18n="foot.contacts">Контакти</h3>
+        <p><span data-i18n="foot.phone">Тел</span>: <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><a href="mailto:info@demolink.org">info@demolink.org</a></p>
+        <p data-i18n="foot.addr">Alexandria, 32 Washington str, 22303</p>
+      </address>
+      <div>
+        <h3 data-i18n="foot.hours">Години</h3>
+        <p data-i18n="foot.h1">Пн–Чт: 10:00–23:00</p>
+        <p data-i18n="foot.h2">Пт–Нд: 10:00–19:00</p>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="foot.demo">© 2026 Worky. Навчальний проєкт.</span>
+        <span data-i18n="foot.made">Дизайн — Київ</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
